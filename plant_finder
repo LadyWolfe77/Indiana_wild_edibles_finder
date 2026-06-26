@@ -1,1 +1,24 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Indiana Wild Edibles Finder</title>
+  </head>
+  <header>
+    <h1>Indiana Wild Edibles Finder</h1>
+  </header>
+  <body>
+    <!--navigation bar-->
+    <nav> 
+      <a href="index.html">Home</a>
+      <a href="plant_finder">Plant Finder</a>
+      <a href="edibles">Edibles</a>
+      <a href="safety">Safety</a>
+      <a href="resources">Resources</a>
+    </nav>
+    
+  </body>
+  <footer>
+    
+  </footer>
+</html>
