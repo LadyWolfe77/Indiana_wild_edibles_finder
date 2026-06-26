@@ -1,2 +1,2 @@
-# plant_finder
-A place to find which forgeable plants are in an area (Indiana)
+# Indiana_wild_edibles_finder
+Discover wild edible plants you can forage in your area- Indiana
