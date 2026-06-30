@@ -91,3 +91,10 @@ main {
     padding: 15px 0;
     justify-content: center;
 }
+.finder-box {
+    background: blanchedalmond;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 650px;
+    text-align: center;
+}
