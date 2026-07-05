@@ -32,18 +32,51 @@
     <main>
       <!--container for finder-->
       <div class="finder-box">
-        <h2>loreum ipsum</h2>
-        <p>
-            Find edible plants by region, season, and habitat.
-        </p>
+        <h2>Find edible plants by region, season, and habitat.</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 bg-white p-6 rounded-xl shadow-md mb-8">
+        <label class="block text-sm font-semibold text-gray-700 mb-1">Region</label>
+        <!--dropdown for region-->
+        <select id="regionFilter" class="w-full border p-2 rounded-lg">
+          <option value="all">All Regions</option>
+          <option value="Northern">Northern Indiana</option>
+          <option value="Central">Central Indiana</option>
+          <option value="Southern">Southern Indiana</option>
+        </select>
+      </div>
+      <div>
+      <label class="block text-sm font-semibold text-gray-700 mb-1">Season</label>
+      <!--dropdown for season-->
+      <select id="seasonFilter" class="w-full border p-2 rounded-lg">
+        <option value="all">All Seasons</option>
+        <option value="Spring">Spring</option>
+        <option value="Summer">Summer</option>
+        <option value="Autumn">Autumn</option>
+        <option value="Winter">Winter</option>
+      </select>
+      </div>
+      <div>
+      <label class="block text-sm font-semibold text-gray-700 mb-1">Habitat</label>
+      
+      <select id="habitatFilter" class="w-full border p-2 rounded-lg">
+        <option value="all">All Habitats</option>
+        <option value="Forest">Forest / Woods</option>
+        <option value="Wetland">Wetland / Riverbank</option>
+        <option value="Field">Field / Open Meadow</option>
+        <option value="Urban">Urban</option>
+      </select>
       </div>
     </main>
+    <div class="Results">
+      <div id="plantGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"></div>
+
+    </div>
     <!--FOOTER-->
     <footer>
       <div class="footer">
         <h3>loreum ipsum</h3>
       </div>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
 
