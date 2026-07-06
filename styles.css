@@ -99,3 +99,10 @@ main {
     text-align: center;
 }
 /*Plant-Finder page*/
+#search-btn {
+     background: blanchedalmond;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 650px;
+    text-align: center;
+}
