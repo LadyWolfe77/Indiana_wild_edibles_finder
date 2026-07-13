@@ -18,7 +18,7 @@ const plants = [
 
         caution: "Only harvest from areas that have not been treated with herbicides or pesticides.",
 
-        image: "images/dandelion.jpg"
+        image: "images/dandelion.jpeg"
     },
 
     {
@@ -37,7 +37,7 @@ const plants = [
 
         caution: "Properly identify before harvesting.",
 
-        image: "images/violet.jpg"
+        image: "images/wildViolet.jpeg"
     },
 
     {
@@ -56,7 +56,7 @@ const plants = [
 
         caution: "Never eat unless positively identified. False morels are poisonous.",
 
-        image: "images/morel.jpg"
+        image: "images/morels.jpg"
     },
 
 ];
