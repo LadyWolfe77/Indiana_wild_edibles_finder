@@ -106,7 +106,7 @@ function displayPlants() {
             </div>
         `;
         
-        // Force the fallback container styles to mirror your Tailwind-styled finder box
+        // Force the fallback container styles to mirror Tailwind-styled finder box
         const fallbackCard = document.getElementById('fallback-card');
         fallbackCard.style.backgroundColor = 'rgba(248, 250, 252, 0.95)';
         fallbackCard.style.backdropFilter = 'blur(8px)';
@@ -135,15 +135,19 @@ function displayPlants() {
         card.classList.add('plant-card'); // Style this class in your CSS
         
         card.innerHTML = `
-            <img src="${plant.image}" alt="${plant.name}" class="plant-img">
-            <div class="plant-info">
-                <h3>${plant.name}</h3>
-                <p><strong>Region:</strong> ${plant.region}</p>
-                <p><strong>Season:</strong> ${plant.season}</p>
-                <p><strong>Habitat:</strong> ${plant.habitat}</p>
-                <p><strong>Edible Parts:</strong> ${plant.ediblePart}</p>
-            </div>
-        `;
+    <img src="${plant.image}" alt="${plant.name}" class="plant-img">
+
+    <div class="plant-info">
+        <h3>${plant.name}</h3>
+        <p><em>${plant.scientificName}</em></p>
+        <p><strong>Regions:</strong> ${plant.regions.join(", ")}</p>
+        <p><strong>Seasons:</strong> ${plant.seasons.join(", ")}</p>
+        <p><strong>Habitats:</strong> ${plant.habitats.join(", ")}</p>
+        <p><strong>Edible Parts:</strong> ${plant.edibleParts}</p>
+        <p><strong>Description:</strong> ${plant.description}</p>
+        <p><strong>Caution:</strong> ${plant.caution}</p>
+    </div>
+`;
         
         resultsContainer.appendChild(card);
     });
