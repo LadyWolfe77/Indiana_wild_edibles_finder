@@ -16,9 +16,8 @@ form.addEventListener("submit", function(event) {
     const contributorName = document.getElementById("contributorName").value.trim();
     const email = document.getElementById("email").value.trim();    
     const agreement = document.getElementById("agreement").checked;
-});
 
-let errors = [];
+    let errors = [];
 
 if (plantName === "") {
     errors.push("Please enter a plant name.");
@@ -48,3 +47,5 @@ message.innerHTML =
 "🌿 Thank you! Your submission has been received for review.";
 
 form.reset();
+});
+
