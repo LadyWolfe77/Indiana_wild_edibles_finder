@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indiana Wild Edibles Finder</title>
+    <link rel="stylesheet" href="styles.css?v=2">
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+      <div class="header-container">
+    <a href="index.html">
+        <img src="images/indiana_logo.png" alt="Indiana Wild Edibles Finder logo">
+    </a>
+    <h1 class="header-title">Indiana Wild Edibles Finder</h1>
+</div>
+<div class="subheader">
+    <h2>Contribute</h2>
+</div>
+    </header>
+    <!--navigation bar-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="plant_finder.html">Plant Finder</a></li>
+        <li><a href="edibles.html">Edibles</a></li>
+        <li><a href="safety.html">Safety</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contribute.html"></a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="welcome-box">
+        <h2>Contribute to the Indiana Wild Edibles Finder</h2>
+        <p>
+            Have you discovered an edible wild plant in Indiana that isn't listed on this website?
+            We'd love to hear about it! All submissions are reviewed before being added to the database.
+        </p>
+      </div>
+      <form id="contributeForm" class="contribute-form">
+
+        <label for="plantName">Plant Name *</label>
+        <input type="text" id="plantName" required>
+
+        <label for="scientificName">Scientific Name</label>
+        <input type="text" id="scientificName">
+
+        <label for="region">Region *</label>
+        <select id="region" required>
+            <option value="">Select a Region</option>
+            <option>North</option>
+            <option>Central</option>
+            <option>South</option>
+        </select>
+
+        <label for="season">Season *</label>
+        <select id="season" required>
+            <option value="">Select a Season</option>
+            <option>Spring</option>
+            <option>Summer</option>
+            <option>Fall</option>
+            <option>Winter</option>
+        </select>
+
+        <label for="habitat">Habitat *</label>
+        <select id="habitat" required>
+            <option value="">Select a Habitat</option>
+            <option>Forest</option>
+            <option>Field</option>
+            <option>Wetland</option>
+            <option>Urban</option>
+        </select>
+
+        <label for="description">Description *</label>
+        <textarea
+            id="description"
+            rows="6"
+            required
+            placeholder="Tell us where you found it, how you identified it, and any other helpful information."
+        ></textarea>
+
+        <label for="photoURL">Photo URL</label>
+        <input
+            type="url"
+            id="photoURL"
+            placeholder="https://example.com/photo.jpg">
+
+        <label for="contributorName">Your Name</label>
+        <input type="text" id="contributorName">
+
+        <label for="email">Email (optional)</label>
+        <input
+            type="email"
+            id="email"
+            placeholder="name@example.com">
+
+        <div class="checkbox-group">
+            <input
+                type="checkbox"
+                id="agreement"
+                required>
+
+            <label for="agreement">
+                I understand that submissions are reviewed before publication.
+            </label>
+        </div>
+
+        <div id="formMessage"></div>
+
+        <button type="submit">
+            🌿 Submit Plant for Review
+        </button>
+
+    </form>
+    </main>
+    <!--FOOTER-->
+    <footer>
+      <div class="footer">
+        <h3>lorem ipsum</h3>
+      </div>
+    </footer>
+    <script src="contribute.js"></script>
+  </body>
+</html>
+

@@ -376,7 +376,126 @@ main {
     color: #334155;
     line-height: 1.5;
 }
+/* CONTRIBUTION FORM */
 
+.contribute-form{
+    background-color: blanchedalmond;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,.1);
+
+    max-width: 700px;
+
+    margin: 30px auto;
+
+    padding: 30px;
+}
+
+.contribute-form label{
+    display:block;
+
+    margin-top:18px;
+
+    margin-bottom:6px;
+
+    font-weight:bold;
+
+    color:#334155;
+}
+
+.contribute-form input,
+.contribute-form select,
+.contribute-form textarea{
+
+    width:100%;
+
+    padding:10px;
+
+    border:1px solid #cbd5e1;
+
+    border-radius:8px;
+
+    background-color:whitesmoke;
+
+    font-size:.95rem;
+
+    box-sizing:border-box;
+}
+
+.contribute-form textarea{
+
+    min-height:140px;
+
+    resize:vertical;
+
+}
+
+.checkbox-group{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:10px;
+
+    margin-top:25px;
+
+}
+
+.checkbox-group input{
+
+    width:auto;
+
+    margin-top:3px;
+
+}
+
+.contribute-form button{
+
+    width:100%;
+    margin-top:25px;
+    padding:12px;
+    background-color:whitesmoke;
+    border:1px solid #cbd5e1;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.contribute-form button:hover{
+
+    background-color:#ffe4bc;
+
+}
+.finder-box {
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.15);
+}
+
+.finder-box h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.finder-button {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #788b57;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.finder-button:hover {
+    background-color: #5f7146;
+}
 /* Layout stack adjustment for smaller screen widths */
 @media (max-width: 900px) {
     .blog-layout-container {
